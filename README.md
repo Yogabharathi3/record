@@ -1,38 +1,43 @@
-# EX-05-2c
- ## AIM 
-To write a C Program to find Sum of Diagonal Elements of a Matrix. 
+# EX-05-2d
+## AIM 
+To write a C Program to find a substring within a string and if found to display its 
+starting position. 
 ## ALGORITHM 
 1. Start the program. 
-2. Read the order of matrix. 
-3. Read the matrix elements for the given order. 
-4. If row is equal to column, add the matrix value. 
-5. Display the final sum. 
-6. Stop the program. 
+2. Read two string variables. 
+3. Using for loops check whether the second string is present in first string. 
+4. If found then display its position. 
+5. Stop the program. 
 ## PROGRAM 
 ```
 #include <stdio.h> 
 int main() 
 { 
- int m,n,a[10][10],i,j,sum=0; 
- scanf("%d %d",&m,&n); 
- for(i=1;i<=m;i++) 
+ char str1[80], str2[80]; 
+ int l, i, j; 
+ scanf("%s",str1); 
+ scanf("%s",str2); 
+ for (l = 0; str2[l] != '\0'; l++); 
+ for (i = 0, j = 0; str1[i] != '\0' && str2[j] != '\0'; i++) 
  { 
- for(j=1;j<=n;j++) 
+ if (str1[i] == str2[j]) 
  { 
- scanf("%d",&a[i][j]); 
- if(i==j) 
+ j++; 
+ } 
+ else 
  { 
- printf("%d\n",a[i][j]); 
- sum+=a[i][j]; 
+ j = 0; 
  } 
  } 
- } 
- printf("The Sum of Diagonal Elements of a Matrix = %d",sum); 
+ if (j == l) 
+ printf("Substring found at position %d", i - j + 17); 
+ else 
+ printf("Substring not found"); 
  return 0; 
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/record/assets/118899387/4bd02aa6-4951-4051-87a0-7f4ffb31318e)
+![image](https://github.com/Yogabharathi3/record/assets/118899387/7f57109f-7a63-4450-8fd3-e54703dd4a8b)
 
 ## RESULT:
 Thus the program  has been executed successfully.
