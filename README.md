@@ -1,33 +1,26 @@
-# EX-04-2d
-## AIM:
-Write a C program to accept a line from user and count number of white or blank spaces from the line using function.
-## ALGORITHM:
+# EX-05-2a
+## AIM 
+Write a C Program to print string 'LINUX' using pointer. 
+## ALGORITHM 
 1. Start the program. 
 2. Read a string variable. 
-3. Using for loop, inspect the string character by character. 
-4. Whenever a space is encountered increment count by 1. 
-5. Display the result. 
-6. Stop the program.
-## PROGRAM:
+3. Using pointer (*) print the string value. 
+4. Stop the program. 
+## PROGRAM 
 ```
-#include<stdio.h>
-int main()
-{
-  char a[500];
-  scanf("%[^\n]",a);
-  int i,c=0;
-  for(i=0;a[i]!='\0';i++)
-  {
-      if(a[i]==' ')
-      {
-          c=c+1;
-      }
-  }
-  printf("White spaces: %d",c);
-  return 0;
+#include<stdio.h> 
+int main() 
+{ 
+ char a[30],*p; 
+ scanf("%s",a); 
+ p=a; 
+ printf("The entered string is :: "); 
+ while(*p!=0) 
+ printf("%c",*p++); 
 }
 ```
-## OUTPUT:
-![image](https://github.com/Yogabharathi3/record/assets/118899387/002349d3-7229-46d8-b06a-31ae32000bfb)
+## OUTPUT
+![image](https://github.com/Yogabharathi3/record/assets/118899387/75347c6e-2cbe-460b-bf27-24869a920c0a)
+
 ## RESULT:
 Thus the program  has been executed successfully.
