@@ -1,7 +1,12 @@
-# EX-06-2b
+# EX-06-2c
 ## AIM 
-Write a C program to count total number of odd elements in the following
-array 33,55,302,231,250 using malloc()
+Create a C Program to store the student information and display it using structure
+struct student
+{ char
+name[50];int
+roll;
+float marks;
+};
 ## ALGORITHM 
 1. Include Headers
 2. Define Constants 
@@ -11,33 +16,30 @@ array 33,55,302,231,250 using malloc()
 6. Stop the program. 
 ## PROGRAM 
 ```
+
 #include <stdio.h>
-#include<stdlib.h>
+struct student {
+char name[50];
+int roll;
+float marks;
+} s;
 int main()
 {
-int i,odd=0,
-*ptr;
-ptr=(int*)malloc(5*sizeof(int));
-ptr[0]=33;
-ptr[1]=55;
-ptr[2]=302;
-ptr[3]=231;
-ptr[4]=250;
-for(i=0; i<5; i++)
-{
-if(ptr[i]%2!= 0)
-{
-odd++;
-}
-}
-printf("Total odd elements:%d"
-, odd);
+scanf("%s %d %f"
+,s.name,&s.roll,&s.marks);
+printf("Displaying Information:\n");
+printf("Name: ");
+printf("%s\n"
+, s.name);
+printf("Roll number: %d\n"
+,
+s.roll);printf("Marks: %.1f\n"
+,
+s.marks);
 return 0;
 }
 ```
 ## OUTPUT
-![image](https://github.com/Yogabharathi3/record/assets/118899387/e9f19fd4-522c-49ac-af5c-d8aa8bab4e8a)
-
-
+![image](https://github.com/Yogabharathi3/record/assets/118899387/bce51327-ed80-4c54-b790-8885f26d81dc)
 ## RESULT:
 Thus the program  has been executed successfully.
