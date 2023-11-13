@@ -1,29 +1,28 @@
-# EX-04-2b
+# EX-04-2c
 ## AIM:
-Write a C program to check whether profit or loss using simple if statement
+To find the length of the string 'LAPTOP
 ## ALGORITHM:
-1. Include Header Files
-2. Declare Variables
-3. Get Input
-4. Calculate Profit or Loss
-5. End the program
+1. Set a variable length to 0 (initial length is 0).
+2. Set a variable index to 0 (initial index is 0).
+3. While the character at index position in the string is not the null character:
+    a. Increment the length by 1.
+    b. Increment the index by 1.
+4. Print or return the length.
 ## PROGRAM:
 ```
 #include<stdio.h>
-int main(){
-int a,b;
-scanf("%d%d",&a,&b);
-if(a<b){
-printf("Profit!!");
-}
-if(b<a)
+#include<string.h>
+int main()
 {
-printf("Loss!!");
-}
-return 0;
+char a[100];
+int i;
+scanf("%s",a);
+for(i=0;a[i]!='\0';i++);
+printf("Length of Str is %d",i);
 }
 ```
 ## OUTPUT:
-![image](https://github.com/Yogabharathi3/record/assets/118899387/a9fb413e-8e93-4d82-bca9-ba77de930230)
+![image](https://github.com/Yogabharathi3/record/assets/118899387/c099a5da-49e5-42e9-9d04-f858a9c98fd6)
+
 ## RESULT:
 Thus the program  has been executed successfully.
