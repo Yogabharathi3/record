@@ -1,4 +1,4 @@
-# EX-05-2a
+# EX-05-2b
 ## AIM 
 Write a C Program to swap the values m = 20, n=45 using function pointers. 
 ## ALGORITHM 
