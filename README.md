@@ -1,25 +1,29 @@
-# EX-04-2a
+# EX-04-2b
 ## AIM:
-Write a Program to check whether a given Value=Y is upper case, lower case, number or special character using conditional operator?
+Write a C program to check whether profit or loss using simple if statement
 ## ALGORITHM:
-1. Get Input
-2. Check for Uppercase
-3. Check for lowercase
-4. Check for Number
-5. Check for Special Character
-6. End the program
+1. Include Header Files
+2. Declare Variables
+3. Get Input
+4. Calculate Profit or Loss
+5. End the program
 ## PROGRAM:
 ```
-#include <stdio.h>
-int main()
+#include<stdio.h>
+int main(){
+int a,b;
+scanf("%d%d",&a,&b);
+if(a<b){
+printf("Profit!!");
+}
+if(b<a)
 {
-char a='A';
-((a>='a')&&(a<'z'))?printf("Lower"):((a>='A')&&(a<'Z'))?printf("Upper"):((a>1)&&(a<=40))
-?printf("Symbol"):printf("Number");
+printf("Loss!!");
+}
+return 0;
 }
 ```
 ## OUTPUT:
-![image](https://github.com/Yogabharathi3/record/assets/118899387/165c0661-0427-4cfe-9bd0-33618cf278a4)
-
+![image](https://github.com/Yogabharathi3/record/assets/118899387/a9fb413e-8e93-4d82-bca9-ba77de930230)
 ## RESULT:
 Thus the program  has been executed successfully.
